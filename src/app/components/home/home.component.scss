@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: #b1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 1270px;
+  min-height: 800px;
+  border-radius: 28px;
+
+  .products {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+  }
+}

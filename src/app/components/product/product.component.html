@@ -1,0 +1,10 @@
+<div class="product rounded d-flex flex-column justify-content-around p-3">
+  <img [src]="product.thumbnail" [alt]="product.description" class="w-100" height="180">
+  <div class="info d-flex flex-column justify-content-around align-items-center">
+    <span>Title: <b>{{product.title}}</b></span>
+    <span>Price: <b>{{product.price | number: '1.2'}}</b></span>
+    <span *ngIf="isOpen">Description: <b>{{product.description}}</b></span>
+    <button class="btn" [ngClass]="{'btn-success': !isOpen, 'btn-danger': isOpen}" (click)="toggleText()">
+      {{isOpen ? "Hide" : "Show"}} description</button>
+  </div>
+</div>
